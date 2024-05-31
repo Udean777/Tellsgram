@@ -6,6 +6,7 @@ export default function TabsNavigator() {
         <Tabs>
             <Tabs.Screen name={"index"} options={{
                 title: "Chats",
+                headerTitleAlign: "center",
                 tabBarIcon: ({ size, color }) => (
                     <Entypo name="chat" size={size} color={color} />
                 )
@@ -13,6 +14,7 @@ export default function TabsNavigator() {
 
             <Tabs.Screen name={"profile"} options={{
                 title: "Profile",
+                headerTitleAlign: "center",
                 tabBarIcon: ({ size, color }) => (
                     <FontAwesome5 name="user-alt" size={size} color={color} />
                 )
