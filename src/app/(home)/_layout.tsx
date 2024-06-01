@@ -13,6 +13,7 @@ export default function HomeLayout() {
     return (
         <ChatProvider>
             <Stack>
+                <Stack.Screen name="call/index" options={{ headerShown: true }} />
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             </Stack>
         </ChatProvider>
