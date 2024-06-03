@@ -37,14 +37,14 @@ export default function ChannelScreen() {
             user_id: member.user_id
         }))
 
-        const call = videoClient?.call("default", Crypto.randomUUID())
+        const call: any = videoClient?.call("default", Crypto.randomUUID())
         await call?.getOrCreate({
             data: {
                 members
             }
         })
 
-        router.push("/call")
+        router.push(`/call/${call.id}`)
     }
 
     return (
